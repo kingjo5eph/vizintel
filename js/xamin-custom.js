@@ -383,11 +383,12 @@ $(document).ready(function() {
     });
 
 
-    window.addEventListener('keydown', function (e) {
-      if ((e.ctrlKey && e.shiftKey && e.key === 'I') || (e.ctrlKey && e.shiftKey && e.key === 'J')) {
-          e.preventDefault(); // Prevent opening developer tools with Ctrl+Shift+I or Ctrl+Shift+J
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'i' || event.key === 'I' || event.key === 'j' || event.key === 'J' || event.key === 'u' || event.key === 'U') {
+          event.preventDefault();
       }
   });
+  
 
 // Change h2 element when click tabs
     function initializeTabs(tabSetId, h2Prefix) {
