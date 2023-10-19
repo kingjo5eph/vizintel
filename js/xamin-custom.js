@@ -382,6 +382,13 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+
+    window.addEventListener('keydown', function (e) {
+      if ((e.ctrlKey && e.shiftKey && e.key === 'I') || (e.ctrlKey && e.shiftKey && e.key === 'J')) {
+          e.preventDefault(); // Prevent opening developer tools with Ctrl+Shift+I or Ctrl+Shift+J
+      }
+  });
+
 // Change h2 element when click tabs
     function initializeTabs(tabSetId, h2Prefix) {
       // Initially, show the first h2 and hide the others
