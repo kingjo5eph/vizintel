@@ -377,17 +377,7 @@ $(document).ready(function() {
 });
 
 
-    // Disable right-click context menu
-    document.addEventListener('contextmenu', function (e) {
-        e.preventDefault();
-    });
 
-
-    document.addEventListener('keydown', function (event) {
-      if (event.key === 'i' || event.key === 'I' || event.key === 'j' || event.key === 'J' || event.key === 'u' || event.key === 'U') {
-          event.preventDefault();
-      }
-  });
   
 
 // Change h2 element when click tabs
