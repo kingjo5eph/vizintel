@@ -360,10 +360,10 @@ $('.blogs-slider').owlCarousel({
 
 
 $(document).ready(function() {
-  $('header .navbar ul li a').on('click', function(event) {
+  $('header .navbar .navbar-nav li a').on('click', function(event) {
     event.preventDefault();
 
-    $('header .navbar ul li a').removeClass('active'); // remove active class from all menu items
+    $('header .navbar .navbar-nav li a').removeClass('active'); // remove active class from all menu items
     $(this).addClass('active'); // add active class to clicked menu item
 
     var target = $(this.getAttribute('href'));
@@ -378,16 +378,16 @@ $(document).ready(function() {
 
 
     // Disable right-click context menu
-    document.addEventListener('contextmenu', function (e) {
-        e.preventDefault();
-    });
+  //   document.addEventListener('contextmenu', function (e) {
+  //       e.preventDefault();
+  //   });
 
 
-    document.addEventListener('keydown', function (event) {
-      if (event.key === 'i' || event.key === 'I' || event.key === 'j' || event.key === 'J' || event.key === 'u' || event.key === 'U') {
-          event.preventDefault();
-      }
-  });
+  //   document.addEventListener('keydown', function (event) {
+  //     if (event.key === 'i' || event.key === 'I' || event.key === 'j' || event.key === 'J' || event.key === 'u' || event.key === 'U') {
+  //         event.preventDefault();
+  //     }
+  // });
   
 
 // Change h2 element when click tabs
