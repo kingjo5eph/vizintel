@@ -391,35 +391,35 @@ $(document).ready(function() {
   
 
 // Change h2 element when click tabs
-    function initializeTabs(tabSetId, h2Prefix) {
-      // Initially, show the first h2 and hide the others
-      $("#" + h2Prefix + "1").show();
-      $("#" + h2Prefix + "2, #" + h2Prefix + "3").hide();
+    // function initializeTabs(tabSetId, h2Prefix) {
+    //   // Initially, show the first h2 and hide the others
+    //   $("#" + h2Prefix + "1").show();
+    //   $("#" + h2Prefix + "2, #" + h2Prefix + "3").hide();
   
-      // Set the opacity for the initially shown h2 to 1
-      $("#" + h2Prefix + "1").css('opacity', 1);
+    //   // Set the opacity for the initially shown h2 to 1
+    //   $("#" + h2Prefix + "1").css('opacity', 1);
   
-      // Add a custom click event handler for the nav-links
-      $(tabSetId + " .nav-link").click(function () {
-        // Get the index of the clicked nav-link
-        var index = $(this).parent().index();
+    //   // Add a custom click event handler for the nav-links
+    //   $(tabSetId + " .nav-link").click(function () {
+    //     // Get the index of the clicked nav-link
+    //     var index = $(this).parent().index();
   
-        // Hide all h2 elements and set their opacity to 0
-        $("h2[id^='" + h2Prefix + "']").hide().css('opacity', 0);
+    //     // Hide all h2 elements and set their opacity to 0
+    //     $("h2[id^='" + h2Prefix + "']").hide().css('opacity', 0);
   
-        // Show the corresponding h2 based on the index and set its opacity to 1
-        $("#" + h2Prefix + (index + 1)).show().css('opacity', 1);
-      });
-    }
+    //     // Show the corresponding h2 based on the index and set its opacity to 1
+    //     $("#" + h2Prefix + (index + 1)).show().css('opacity', 1);
+    //   });
+    // }
   
-    $(document).ready(function () {
-      initializeTabs("#pills-tab-ourstrategies", "h2_1_");
-      initializeTabs("#pills-tab-transformation", "h2_2_");
-      initializeTabs("#pills-tab-dataanalysis", "h2_3_");
-      initializeTabs("#pills-tab-about", "h2_4_");
-      initializeTabs("#pills-tab-whatwedo", "h2_5_");
-      initializeTabs("#pills-tab-projectcontrols", "h2_6_");
-    });
+    // $(document).ready(function () {
+    //   initializeTabs("#pills-tab-ourstrategies", "h2_1_");
+    //   initializeTabs("#pills-tab-transformation", "h2_2_");
+    //   initializeTabs("#pills-tab-dataanalysis", "h2_3_");
+    //   initializeTabs("#pills-tab-about", "h2_4_");
+    //   initializeTabs("#pills-tab-whatwedo", "h2_5_");
+    //   initializeTabs("#pills-tab-projectcontrols", "h2_6_");
+    // });
 
     
     $(document).ready(function() {
