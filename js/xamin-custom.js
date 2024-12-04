@@ -237,15 +237,15 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 // Disable right-click context menu
-  //   document.addEventListener('contextmenu', function (e) {
-  //       e.preventDefault();
-  //   });
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
 
-  //   document.addEventListener('keydown', function (event) {
-  //     if (event.key === 'i' || event.key === 'I' || event.key === 'j' || event.key === 'J' || event.key === 'u' || event.key === 'U') {
-  //         event.preventDefault();
-  //     }
-  // });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'i' || event.key === 'I' || event.key === 'j' || event.key === 'J' || event.key === 'u' || event.key === 'U') {
+          event.preventDefault();
+      }
+  });
 
 
 
