@@ -266,6 +266,17 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     renderBullet: function (index, className) {
       return '<span class="' + className + '"><span class="pagination-text">' + (menu[index]) + '</span></span>';
   },
+  breakpoints: {
+    640: {
+      mousewheel: {
+        forceToAxis: false,
+
+        releaseOnEdges: false,
+    },
+
+    },
+
+  }
   
   },
   });
