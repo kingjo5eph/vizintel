@@ -255,36 +255,29 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
     direction: "vertical",
     slidesPerView: 1,
     spaceBetween: 30,
-  //   mousewheel: {
-  //     forceToAxis: true,
-  //     sensitivity: 1,
-  //     releaseOnEdges: true,
-  // },
+    mousewheel: {
+      forceToAxis: true,
+      sensitivity: 1,
+      releaseOnEdges: true,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
     renderBullet: function (index, className) {
       return '<span class="' + className + '"><span class="pagination-text">' + (menu[index]) + '</span></span>';
   },
-  // breakpoints: {
-  //   0: {
-  //     mousewheel: {
-  //       forceToAxis: false,
+  breakpoints: {
+    0: {
+      mousewheel: {
+        forceToAxis: false,
 
-  //       releaseOnEdges: false,
-  //   },
+        releaseOnEdges: false,
+    },
 
-  //   },
-  //   767: {
-  //     mousewheel: {
-  //       forceToAxis: false,
+    },
 
-  //       releaseOnEdges: false,
-  //   },
 
-  //   },
-
-  // }
+  }
   
   },
   });

@@ -1537,6 +1537,9 @@ header.style-one {
     line-height: 2;
     margin-bottom: 0;
 }
+.banner-carousel{
+  height: calc(50vh - 70px);
+}
 }
 @media (max-width: 575px) {
   .custom-tab .nav-pills .nav-link .tab-title {
