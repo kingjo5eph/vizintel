@@ -267,7 +267,15 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
       return '<span class="' + className + '"><span class="pagination-text">' + (menu[index]) + '</span></span>';
   },
   breakpoints: {
-    640: {
+    0: {
+      mousewheel: {
+        forceToAxis: false,
+
+        releaseOnEdges: false,
+    },
+
+    },
+    767: {
       mousewheel: {
         forceToAxis: false,
 
